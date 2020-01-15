@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" charset="utf-8">
+<title>ART</title>
+<link href="../imagens/icone.png" rel="icon" type="image/x-icon" />
+<link href="../css/main.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+	<!-- Barra de Menu -->
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-light main-bg-azul-2">
+			<a class="navbar-brand h5" href="../home.html"><img src="../imagens/logo_p.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown ml-auto">
+						<a class="nav-link dropdown-toggle main-text-azul-e2" href="#" id="cliente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuario</a>
+					    <div class="dropdown-menu" aria-labelledby="cliente">
+							<a class="dropdown-item" href="../usuario/form_nome.html">Cadastro</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../usuario/lista.html">Lista</a>
+						</div>
+					</li>					
+					<li class="nav-item dropdown  ml-auto">
+						<a class="nav-link dropdown-toggle main-text-azul-e2" href="#" id="cliente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cliente</a>
+					    <div class="dropdown-menu" aria-labelledby="cliente">
+							<a class="dropdown-item" href="../cliente/form_cpf.html">Cadastro</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../cliente/lista.html">Lista</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown ml-auto">
+						<a class="nav-link dropdown-toggle main-text-azul-e2" href="#" id="tipoServiço" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo Serviço</a>
+					    <div class="dropdown-menu" aria-labelledby="tipoServiço">
+							<a class="dropdown-item" href="../tipoServico/form_nome.html">Cadastro</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../tipoServico/lista.html">Lista</a>
+						</div>
+					</li>
+					<li class="nav-item ml-auto"><a class="nav-link main-text-azul-e2" href="../veiculo/lista.html">Veículo Lista</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link main-text-azul-e2" href="../servico/lista.html">Serviço Lista</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link main-text-azul-e2" href="../lembrete/lista.html">Lembrete Lista</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link text-dark h5">Suely</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link text-danger h5" href="../index.html" title="voltar para tela de login">@Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+	
+	<!-- Tela -->
+	<section class="container my-2">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8 p-2 mb-1 main-bg-preto-05 main-border-preto-25 rounded">
+				<form enctype="multipart/form-data" th:object="${cliente}">
+					<div class="row">
+						<div class="col-12">
+							<h5 class="text-center">Cadastro Cliente</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 mt-2">
+							<label class="control-label mb-1"><b>*Nome</b></label> 
+							<input class="form-control form-control-sm" type="text" placeholder="nome" maxlength="100" required/>
+						</div>	
+						<div class="col-6 col-md-4 mt-2">
+							<label class="control-label mb-1"><b>*CPF</b></label> 
+							<input class="form-control form-control-sm" value="285.965.600-68" type="text" placeholder="cpf" maxlength="14" required/>
+						</div>						
+						<div class="col-6 col-md-4  mt-2">
+							<label class="control-label mb-1"><b>*RG</b></label> 
+							<input class="form-control form-control-sm" type="text" placeholder="rg" maxlength="20" required/>
+						</div>	
+						<div class="col-6 col-md-4 mt-2">
+							<label class="control-label mb-1"><b>E-mail</b></label> 
+							<input class="form-control form-control-sm" type="text" placeholder="e-mail" maxlength="100" />
+						</div>
+						<div class="col-6 col-md-4 mt-2">
+							<label class="control-label mb-1"><b>Telefone</b></label> 
+							<input class="form-control form-control-sm" type="text" placeholder="telefone" maxlength="14"/>
+						</div>	
+						<div class="col-6 col-md-4 mt-2">
+							<label class="control-label mb-1"><b>Celular</b></label> 
+							<input class="form-control form-control-sm" type="text" placeholder="celular" maxlength="14"/>
+						</div>
+						<div class="col-6 col-md-4 mt-2">
+							<label class="control-label mb-1"><b>Whatsapp</b></label> 
+							<input class="form-control form-control-sm" type="text" placeholder="whatsapp" maxlength="14"/>
+						</div>					
+						<div class="col-12 col-md-6 mt-2">
+							<label class="control-label mb-1"><b>Endereço</b></label> 
+							<textarea class="form-control form-control-sm" rows="2" maxlength="200" placeholder="endereço"></textarea>
+						</div>											
+						<div class="col-12 col-md-6 mt-2">
+							<label class="control-label mb-1"><b>Observações</b></label> 
+							<textarea class="form-control form-control-sm" rows="2" maxlength="200" placeholder="observações"></textarea>
+						</div>
+					</div>
+					<div class="row main-border-preto-25 rounded m-0 mt-2 p-2">
+						<div class="col-6 col-md-4 mt-2">
+							<label class="control-label mb-1"><b>CNH</b></label> 
+							<input class="form-control form-control-sm" type="text" placeholder="CHN" maxlength="10"/>
+						</div>	
+						<div class="col-6 col-md-4 mt-2">
+						<label class="control-label mb-1"><b>Categoria</b></label>
+							<select class="form-control form-control-sm" name="categoriaCnh" required>
+								<option>Escolha uma categoria</option>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+								<option>D</option>
+								<option>E</option>
+								<option>AB</option>
+								<option>AC</option>
+								<option>AD</option>
+								<option>AE</option>
+							</select>
+						</div>	
+						<div class="col-6 col-md-4 mt-2">
+							<label class="control-label mb-1"><b>Validade CNH</b></label> 
+							<input class="form-control form-control-sm" type="date" placeholder="validade CNH"/>
+						</div>				
+					</div>	
+					<div class="row justify-content-end">
+						<div class="col-auto mt-3">
+							<a class="btn btn-primary btn-sm" href="">Salvar</a>
+						</div>
+					</div>							
+				</form>
+				<div class="accordion mt-2 mb-2 border-0">
+					<div class="card">
+						<div class="card-header p-1 border-0" id="headingVeiculos">
+							<button class="btn btn-link collapsed main-text-azul-e2" type="button" data-toggle="collapse" data-target="#collapseVeiculos" aria-expanded="false" 
+							aria-controls="headingVeiculos">Veículos</button>
+						</div>
+						<div id="collapseVeiculos" class="collapse border-0" aria-labelledby="headingVeiculos">
+							<div class="card-body">
+								<form class="p-0" enctype="multipart/form-data">
+									<div class="row justify-content-center">
+										<div class="col-auto">
+											<a class="btn btn-primary btn-block btn-sm" href="../veiculo/form.html">Criar Novo Veículo</a>
+										
+											<table class="table table-hover table-striped  table-responsive table-sm mt-2">
+												<thead class="thead-dark">
+													<tr>
+														<th class="text-center font-weight-normal" scope="col">Veículo</th>
+														<th class="text-center font-weight-normal" scope="col">Placa</th>
+														<th class="text-center font-weight-normal" scope="col">Renavam</th>
+														<th scope="col"/>
+														<th scope="col"/>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-center align-middle" scope="row" >Monza</td>
+														<td class="text-center align-middle" scope="row" />CCC9988</td>
+														<td class="text-center align-middle" scope="row" />123456789</td>
+														<td class="text-center align-middle"scope="row">
+															<a class="btn btn-warning btn-sm" href="../veiculo/form.html" title="Alterar Veículo">Alterar</a>
+														</td>
+														<td class="text-center align-middle" scope="row">
+															<!-- Botão Modal -->
+															<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalExcluirVeiculo">Excluir</button>
+															
+															<!-- Modal -->
+															<div class="modal fade" id="modalExcluirVeiculo" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+																<div class="modal-dialog modal-dialog-centered" role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<h5 class="modal-title text-center" id="TituloModalCentralizado">Excluir Veículo</h5>
+																			<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			Deseja mesmo excluir o Veículo Monza</span>?
+																		</div>
+																		<div class="modal-footer">
+																			<button class="btn btn-secondary btn-sm" type="button" data-dismiss="modal">Camcelar</button>
+																			<a class="btn btn-danger btn-sm" href="">Excluir</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>	
+										</div>			
+									</div>	
+								</form>	
+							</div>
+						</div>	
+					</div>				
+					<div class="card">
+						<div class="card-header p-1 border-0" id="headingServicos">
+							<button class="btn btn-link collapsed main-text-azul-e2" type="button" data-toggle="collapse" data-target="#collapseServicos" aria-expanded="false" 
+							aria-controls="headingServicos">Serviços</button>
+						</div>
+						<div id="collapseServicos" class="collapse border-0" aria-labelledby="headingServicos">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-12 mt-2">
+										<form class="p-0" enctype="multipart/form-data">
+											<div class="row main-border-preto-25 rounded m-0 mt-2 p-2">
+												<div class="col-12">
+													<p class="text-center"><b>Novo Serviço</b></p>
+												</div>
+												<div class="col-8 mt-2">
+													<label class="control-label mb-1"><b>Tipo Serviço</b></label>
+													<select class="form-control form-control-sm" name="tipoServico" required>
+														<option value="Novo Serviço">Novo Serviço</option>
+														<option value="Licenciamento">Licenciamento</option>
+														<option value="Renovação CNH">Renovação CNH</option>
+														<option value="Suspensão">Suspensão</option>
+													</select>
+												</div>
+												<div class="col-auto align-self-end ml-auto mt-2">
+													<a class="btn btn-primary btn-sm" href="../servico/form.html">Criar</a>
+												</div>
+											</div>
+											<div class="row justify-content-center">
+												<div class="col-auto">
+													<table class="table table-hover table-striped  table-responsive table-sm mt-2">
+														<thead class="thead-dark">
+															<tr>
+																<th class="text-center font-weight-normal" scope="col">Nome</th>
+																<th class="text-center font-weight-normal" scope="col">Observações</th>
+																<th scope="col"/>
+																<th scope="col"/>
+															</tr>
+														</thead>
+														<tbody>
+															<tr th:each="servico : ${servicos}">
+																<td class="text-center align-middle">Habilitação</td>
+																<td class="text-center align-middle"scope="row" />
+																<td class="text-center align-middle"scope="row">
+																	<a class="btn btn-warning btn-sm" href="../servico/form.html" title="Alterar Serviço">Alterar</a>
+																</td>
+																<td class="text-center align-middle" scope="row">
+																	<!-- Botão Modal -->
+																	<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalExcluirServico">Excluir</button>
+																	
+																	<!-- Modal -->
+																	<div class="modal fade" id="modalExcluirServico" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+																		<div class="modal-dialog modal-dialog-centered" role="document">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title text-center" id="TituloModalCentralizado">Excluir Serviço</h5>
+																					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+																						<span aria-hidden="true">&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body">
+																					Deseja mesmo excluir o Serviço Habilitação</span>?
+																				</div>
+																				<div class="modal-footer">
+																					<button class="btn btn-secondary btn-sm" type="button" data-dismiss="modal">Camcelar</button>
+																					<a class="btn btn-danger btn-sm" href="">Excluir</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>								
+							</div>
+						</div>	
+					</div>	
+				</div>					
+			</div>
+		</div>
+	</section>
+	
+		
+	<!-- Optional JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>

@@ -1,0 +1,10 @@
+echo "# planet-git" >> README.md
+git init
+git config --local user.email "ricardomoreira@usp.com"
+git add .
+git commit -m "first commit"
+
+git remote add origin https://github.com/ricardomoreirausp/fernendo_html.git
+git push origin master
+git clone https://github.com/ricardomoreirausp/fernendo_html.git fernendo_html
+git pull https://github.com/ricardomoreirausp/fernendo_html.git

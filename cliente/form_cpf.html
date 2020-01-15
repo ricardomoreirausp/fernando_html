@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" charset="utf-8">
+<title>ART</title>
+<link href="../imagens/icone.png" rel="icon" type="image/x-icon" />
+<link href="../css/main.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+	<!-- Barra de Menu -->
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-light main-bg-azul-2">
+			<a class="navbar-brand h5" href="../home.html"><img src="../imagens/logo_p.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown ml-auto">
+						<a class="nav-link dropdown-toggle main-text-azul-e2" href="#" id="cliente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuario</a>
+					    <div class="dropdown-menu" aria-labelledby="cliente">
+							<a class="dropdown-item" href="../usuario/form_nome.html">Cadastro</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../usuario/lista.html">Lista</a>
+						</div>
+					</li>					
+					<li class="nav-item dropdown  ml-auto">
+						<a class="nav-link dropdown-toggle main-text-azul-e2" href="#" id="cliente" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cliente</a>
+					    <div class="dropdown-menu" aria-labelledby="cliente">
+							<a class="dropdown-item" href="../cliente/form_cpf.html">Cadastro</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../cliente/lista.html">Lista</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown ml-auto">
+						<a class="nav-link dropdown-toggle main-text-azul-e2" href="#" id="tipoServiço" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo Serviço</a>
+					    <div class="dropdown-menu" aria-labelledby="tipoServiço">
+							<a class="dropdown-item" href="../tipoServico/form_nome.html">Cadastro</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="../tipoServico/lista.html">Lista</a>
+						</div>
+					</li>
+					<li class="nav-item ml-auto"><a class="nav-link main-text-azul-e2" href="../veiculo/lista.html">Veículo Lista</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link main-text-azul-e2" href="../servico/lista.html">Serviço Lista</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link main-text-azul-e2" href="../lembrete/lista.html">Lembrete Lista</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link text-dark h5">Suely</a></li>
+					<li class="nav-item ml-auto"><a class="nav-link text-danger h5" href="../index.html" title="voltar para tela de login">@Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+	
+	<!-- Tela -->
+	<section class="container mt-2">
+		<div class="row justify-content-center">
+			<div class="col-12 col-sm-8 col-md-6 p-2 mb-1 main-bg-preto-05 main-border-preto-25 rounded">
+				<form>
+					<div class="row">
+						<div class="col-12">
+							<h5 class="text-center">Cadastro Cliente</h5>
+							<h5 class="text-center"><i>CPF</i></h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 mt-2">
+							<label class="control-label mb-1"><b>*CPF</b></label> 
+							<input class="form-control form-control-sm" value="285.965.600-68" type="text" placeholder="cpf" maxlength="14" required/>
+						</div>											
+					</div>
+					<div class="row justify-content-end">
+						<div class="col-auto mt-3">
+							<a class="btn btn-primary btn-sm" href="form.html">Cadastrar</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+		
+	<!-- Optional JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>

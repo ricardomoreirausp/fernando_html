@@ -1,0 +1,94 @@
+.main-bg-azul-1 {background-color: #06ABF9 !important;}
+.main-bg-azul-2 {background-color: #D0E8F8 !important;}
+.main-bg-azul-e1 {background-color: #306BB2 !important;}
+.main-bg-azul-e2 {background-color: #0F62AC !important;}
+.main-bg-azul-e3 {background-color: #1A5493 !important;}
+.main-bg-amarelo {background-color: #FFF8AF !important;}
+.main-bg-branco {background-color: #FFFFFF !important;}
+.main-bg-preto-90 {background-color: #1A1A1A !important;}
+.main-bg-preto-80 {background-color: #333333 !important;}
+.main-bg-preto-70 {background-color: #4D4D4D !important;}
+.main-bg-preto-60 {background-color: #676767 !important;}
+.main-bg-preto-50 {background-color: #808080 !important;}
+.main-bg-preto-40 {background-color: #999999 !important;}
+.main-bg-preto-30 {background-color: #B3B3B3 !important;}
+.main-bg-preto-20 {background-color: #CCCCCC !important;}
+.main-bg-preto-10 {background-color: #E6E6E6 !important;}
+.main-bg-preto-25 {background-color: #BFBFBF !important;}
+.main-bg-preto-15 {background-color: #D8D8D8 !important;}
+.main-bg-preto-05 {background-color: #F2F2F2 !important;}
+
+.main-bg-gradient {background-image: linear-gradient(#999999, #FFFFFF);}
+
+.main-text-azul-1 {color: #06ABF9 !important;}
+.main-text-azul-2 {color: #D0E8F8 !important;}
+.main-text-azul-e1 {color: #306BB2 !important;}
+.main-text-azul-e2 {color: #0F62AC !important;}
+.main-text-azul-e3 {color: #1A5493 !important;}
+.main-text-amarelo {color: #FFF8AF !important;}
+.main-text-branco {color: #FFFFFF !important;}
+.main-text-preto-90 {color: #1A1A1A !important;}
+.main-text-preto-80 {color: #333333 !important;}
+.main-text-preto-70 {color: #4D4D4D !important;}
+.main-text-preto-60 {color: #676767 !important;}
+.main-text-preto-50 {color: #808080 !important;}
+.main-text-preto-40 {color: #999999 !important;}
+.main-text-preto-30 {color: #B3B3B3 !important;}
+.main-text-preto-20 {color: #CCCCCC !important;}
+.main-text-preto-10 {color: #E6E6E6 !important;}
+.main-text-preto-25 {color: #BFBFBF !important;}
+.main-text-preto-15 {color: #D8D8D8 !important;}
+.main-text-preto-05 {color: #F2F2F2 !important;}
+
+.main-border-azul-1 {border-color: #06ABF9 !important; border: 1.2px; border-style: solid;}
+.main-border-azul-2 {border-color: #D0E8F8 !important; border: 1.2px; border-style: solid;}
+.main-border-azul-e1 {border-color: #306BB2 !important; border: 1.2px; border-style: solid;}
+.main-border-azul-e2 {border-color: #0F62AC !important; border: 1.2px; border-style: solid;}
+.main-border-azul-e3 {border-color: #1A5493 !important; border: 1.2px; border-style: solid;}
+.main-text-amarelo {border-color: #FFF8AF !important; border: 1.2px; border-style: solid;}
+.main-text-branco {border-color: #FFFFFF !important; border: 1.2px; border-style: solid;}
+.main-border-preto-90 {border-color: #1A1A1A !important; border: 1.2px; border-style: solid;}
+.main-border-preto-80 {border-color: #333333 !important; border: 1.2px; border-style: solid;}
+.main-border-preto-70 {border-color: #4D4D4D !important; border: 1.2px; border-style: solid;}
+.main-border-preto-60 {border-color: #676767 !important; border: 1.2px; border-style: solid;}
+.main-border-preto-50 {border-color: #808080 !important; border: 1.2px; border-style: solid;}
+.main-border-preto-40 {border-color: #999999 !important; border: 1.2px; border-style: solid;}
+.main-border-preto-30 {border-color: #B3B3B3 !important; border: 1.2px; border-style: solid;}
+.main-border-preto-20 {border-color: #CCCCCC !important; border: 1.2px; border-style: solid;}
+.main-border-preto-10 {border-color: #E6E6E6 !important; border: 1.2px; border-style: solid;}
+.main-border-preto-25 {border-color: #BFBFBF !important; border: 1.2px; border-style: solid;}
+.main-border-preto-15 {border-color: #D8D8D8 !important; border: 1.2px; border-style: solid;}
+.main-border-preto-05 {border-color: #F2F2F2 !important; border: 1.2px; border-style: solid;}
+
+.main-font-1 {font-size: 1px !important;}
+.main-font-2 {font-size: 2px !important;}
+.main-font-3 {font-size: 3px !important;}
+.main-font-4 {font-size: 4px !important;}
+.main-font-5 {font-size: 5px !important;}
+.main-font-6 {font-size: 6px !important;}
+.main-font-7 {font-size: 7px !important;}
+.main-font-8 {font-size: 8px !important;}
+.main-font-9 {font-size: 9px !important;}
+.main-font-10 {font-size: 10px !important;}
+.main-font-11 {font-size: 11px !important;}
+.main-font-12 {font-size: 12px !important;}
+.main-font-13 {font-size: 13px !important;}
+.main-font-14 {font-size: 14px !important;}
+.main-font-15 {font-size: 15px !important;}
+.main-font-16 {font-size: 16px !important;}
+.main-font-17 {font-size: 17px !important;}
+.main-font-18 {font-size: 18px !important;}
+.main-font-19 {font-size: 19px !important;}
+.main-font-20 {font-size: 20px !important;}
+.main-font-22 {font-size: 22px !important;}
+.main-font-25 {font-size: 25px !important;}
+.main-font-28 {font-size: 28px !important;}
+.main-font-32 {font-size: 32px !important;}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "selecione um arquivo*";
+}
+
+body{
+	overflow-y: scroll;
+}
